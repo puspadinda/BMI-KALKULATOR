@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: pink;
+}
+.grid-child.left h4{
+    font-weight: 600;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid-child.left{
+    padding: 20px;
+    width: 90%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+.grid-child.left p{
+    text-align: justify;
+    font-size: small;
+}
+.grid-child.right{
+    padding: 20px;
+    width: 90%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+.grid-child.right p{
+    padding-top: 20px;
+    text-align: justify;
+    font-size: medium;
+}
+.form-input{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    height: 45%;
+    padding: 20px;
+}
+.form-input .form-check{
+    display: inline-block;
+    padding-bottom: 20px;
+    background-color: rgb(241, 241, 241);
+}
+.grid-child.right .result-container{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
+.result-container .text-result{
+    text-align: center;
+    padding: 50px;
+}
+
